@@ -16,13 +16,15 @@ export default {
 
 <style>
 .tabs {
-  display: flex;
+  /*display: flex;*/
+  display: none;
   list-style: none;
   padding: 0;
   margin: 0 1rem 1.5rem;
   border-radius: 8px;
   overflow: hidden;
-  border: solid 1px #000;
+  border: solid 1px #294653;
+  color: #294653;
 }
 .tabs li {
   width: 50%;
@@ -35,7 +37,7 @@ export default {
   margin-left: -1px;
 }
 .tabs li.active {
-  background: #000;
+  background: #294653;
   color: #fff;
   cursor: default;
 }

@@ -39,6 +39,9 @@ export default {
   border-radius: 50% 50%;
   display: block;
 }
+.avatar:hover {
+  transform: rotate(180deg);
+}
 .hello {
   display: flex;
   align-items: center;
@@ -46,9 +49,7 @@ export default {
   max-width: 300px;
   margin: 1.5rem auto;
 }
-.hello:hover .avatar {
-  transform: rotate(180deg);
-}
+
 .hello .message {
   position: relative;
   padding: 0.5rem 0.75rem;
