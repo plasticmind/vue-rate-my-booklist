@@ -60,6 +60,66 @@
         <div class="rank">11</div>
       </div>
     </li>
+    <li class="book">
+      <div class="book-info">
+        <div class="title">
+          <a href="https://www.amazon.com/How-Not-Be-Wrong-Mathematical/dp/0143127535" title="">
+            How Not To Be Wrong: The Power of Mathematical Thinking
+          </a>
+        </div>
+        <div class="author">
+          Jordan Ellenberg
+        </div>
+        <div class="rating">
+          ★★★★★
+        </div>
+        <div class="review"></div>
+      </div>
+      <div class="rank-info">
+        <button class="upvote">△</button>
+        <div class="rank">137</div>
+      </div>
+    </li>
+    <li class="book">
+      <div class="book-info">
+        <div class="title">
+          <a href="https://www.amazon.com/Burnout-Secret-Unlocking-Stress-Cycle/dp/1984818325/" title="">
+            Burnout: The Secret to Unlocking the Stress Cycle
+          </a>
+        </div>
+        <div class="author">
+          Emily Nagoski and Amelia Nagoski
+        </div>
+        <div class="rating">
+          ★★★★☆
+        </div>
+        <div class="review"></div>
+      </div>
+      <div class="rank-info">
+        <button class="upvote">△</button>
+        <div class="rank">56</div>
+      </div>
+    </li>
+    <li class="book">
+      <div class="book-info">
+        <div class="title">
+          <a href="https://www.amazon.com/dp/B0042JSQLU/" title="">
+            Art & Fear: Observations on the Perils and Rewards of Artmaking
+          </a>
+        </div>
+        <div class="author">
+          David Bayles and Ted Orland
+        </div>
+        <div class="rating">
+          ★★☆☆☆
+        </div>
+        <div class="review"></div>
+      </div>
+      <div class="rank-info">
+        <button class="upvote">△</button>
+        <div class="rank">11</div>
+      </div>
+    </li>
   </ul>
 </template>
 
