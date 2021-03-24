@@ -1,28 +1,47 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header/>
+    <Tabs/>
+    <BookList/>
+    <Footer/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Tabs from './components/Tabs.vue'
+import BookList from './components/BookList.vue'
+import Footer from './components/Footer.vue'
 
 export default {
-  name: 'App',
+  name: 'Rate My Booklist',
   components: {
-    HelloWorld
+    Header,
+    Tabs,
+    BookList,
+    Footer
   }
 }
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+  margin: 0;
+  padding: 0;
+}
 #app {
+  background: #fff;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  max-width: 400px;
+  min-height: 100vh;
+  margin: 0 auto;
   color: #2c3e50;
-  margin-top: 60px;
 }
+
 </style>
