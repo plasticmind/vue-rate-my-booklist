@@ -24,19 +24,20 @@ export default {
   background: linear-gradient(#299C8E,#274654);
   color: #fff;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   padding: 0.5rem;
-
 }
-
 .avatar {
   margin-right: 1rem;
+  transition: transform 1s;
 }
 .avatar img {
   max-width: 50px;
   border-radius: 50% 50%;
+  display: block;
 }
 .hello {
   display: flex;
@@ -44,6 +45,9 @@ export default {
   justify-content: center;
   max-width: 300px;
   margin: 1.5rem auto;
+}
+.hello:hover .avatar {
+  transform: rotate(180deg);
 }
 .hello .message {
   position: relative;

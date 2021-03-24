@@ -86,9 +86,11 @@ ul, li {
   padding: 0;
 }
 a {
+ transition: color 0.5s;
  color: #274553;
 }
 a:hover {
+  transition: color 0.2s;
   color: #289D8F;
 }
 a:visited {
@@ -117,7 +119,7 @@ a:visited {
 }
 .rank-info {
   text-align: center;
-  margin-right: 1rem;
+  margin: 0.25rem 1rem 0 0;
   font-size: 0.8rem;
   font-weight: bold;
 }

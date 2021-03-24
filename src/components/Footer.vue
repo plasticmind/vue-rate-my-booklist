@@ -9,3 +9,16 @@ export default {
   name: 'Footer'
 }
 </script>
+
+<style>
+.footer {
+  text-align: center;
+  background: #294653;
+  color: #fff;
+  padding: 0.5rem;
+}
+.footer a {
+  color: #fff;
+}
+
+</style>

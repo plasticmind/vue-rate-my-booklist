@@ -1,6 +1,6 @@
 <template>
   <ul class="tabs">
-    <li class="read">To Read</li>
+    <li class="read active">To Read</li>
     <li class="finished">Finished</li>
   </ul>
 </template>
@@ -13,3 +13,30 @@ export default {
   }
 }
 </script>
+
+<style>
+.tabs {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0 1rem 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: solid 1px #000;
+}
+.tabs li {
+  width: 50%;
+  padding: 0.25rem;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+.tabs li:last-child {
+  margin-left: -1px;
+}
+.tabs li.active {
+  background: #000;
+  color: #fff;
+  cursor: default;
+}
+</style>
