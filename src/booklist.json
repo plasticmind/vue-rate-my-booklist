@@ -1,0 +1,35 @@
+{
+    "books": [
+      {
+        "id": 1,
+        "title": "How Not To Be Wrong: The Power of Mathematical Thinking",
+        "author": "Jordan Ellenberg",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/How-Not-Be-Wrong-Mathematical/dp/0143127535",
+        "rank": 137,
+        "rating": "★★★★★",
+        "reviewUrl": ""
+      },
+      {
+        "id": 2,
+        "title": "Burnout: The Secret to Unlocking the Stress Cycle",
+        "author": "Emily Nagoski and Amelia Nagoski",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Burnout-Secret-Unlocking-Stress-Cycle/dp/1984818325/",
+        "rank": 56,
+        "rating": "★★★★☆",
+        "reviewUrl": ""
+      },
+      {
+        "id": 3,
+        "title": "Art & Fear: Observations on the Perils and Rewards of Artmaking",
+        "author": "David Bayles and Ted Orland",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/dp/B0042JSQLU/",
+        "rank": 11,
+        "rating": "★★☆☆☆",
+        "reviewUrl": ""
+      }  
+    ]
+  }
+  
