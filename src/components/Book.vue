@@ -10,20 +10,23 @@
           </span>
         </div>
         <div v-if="book.author" class="author">
-          {{ book.author }}
+          by {{ book.author }}
         </div>
         <div class="book-meta">
-            <span v-if="book.rating" class="rating">
-                {{ book.rating }}
-            </span>
-            <span v-if="book.reviewUrl" class="review">
-                <a :href="book.reviewUrl" :title="'Read review of '+book.title">Review of {{ book.title }}</a>
-            </span>
+          <span v-if="book.rating" class="rating">
+            {{ book.rating }}
+          </span>
+          <span v-if="book.reviewUrl" class="review">
+            <a :href="book.reviewUrl" :title="'Read review of '+book.title">Review of {{ book.title }}</a>
+          </span>
+        </div>
+        <div v-if="book.note" class="book-note">
+          {{ book.note }}
         </div>
       </div>
-      <div class="rank-info">
+      <div :class="{'rank-info': true, 'has-rank': hasRank}">
         <button @click="increaseRank()" class="upvote">△</button>
-        <div v-if="book.rank > 0" class="rank">{{ book.rank }}</div>
+        <div class="rank">{{ book.rank }}</div>
       </div>
     </li>
 </template>
@@ -42,6 +45,9 @@ export default {
     computed: {
         isHot: function () {
             return this.book.rank >= 25;
+        },
+        hasRank: function () {
+            return this.book.rank > 0;
         }
     }
 }
@@ -75,7 +81,7 @@ export default {
 .rating {
   color: #E8C270;
   font-size: 0.8rem;
-  margin-right: 0.5rem;
+  margin: 0.25rem 0.5rem 0 0;
 }
 .review a {
     margin-top: 2px;
@@ -98,8 +104,10 @@ export default {
   font-size: 0.8rem;
   font-weight: bold;
 }
-.is-hot {
-    border-right: solid 2px #E8C270;
+.book-note {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
 }
 .upvote {
     cursor: pointer;
@@ -110,9 +118,20 @@ export default {
     transition: all 0.5s;
 }
 .upvote:hover {
-    background-color: #289D8F;
-    color: #fff;
-    border-color: transparent;
-    transition: all 0.2s;
+  background-color: #289D8F;
+  color: #fff;
+  border-color: transparent;
+  transition: all 0.2s;
+}
+.is-hot {
+  transition: border-width 0.5s;
+  border-right: solid 2px #E8C270;
+}
+.rank {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.has-rank .rank {
+  opacity: 1;
 }
 </style>
