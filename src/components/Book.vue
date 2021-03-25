@@ -1,5 +1,5 @@
 <template>
-    <li v-if="book" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
+    <li v-if="book && book.status == 'to_read' || book.status == 'reading'" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
       <div class="book-info">
         <div class="title">
           <a v-if="book.purchaseUrl" :href="book.purchaseUrl" :title="'Purchase '+book.title" target="_blank">
