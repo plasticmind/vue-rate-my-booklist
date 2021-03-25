@@ -670,6 +670,171 @@
         "rating": "★★★★☆",
         "reviewUrl": "",
         "status": "finished"
-      } 
+      },
+      {
+        "id": 64,
+        "title": "Principles: Life and Work",
+        "author": "Ray Dalio",
+        "note": "Bored and couldn't finish it. Might revisit at some point in the future.",
+        "purchaseUrl": "https://www.amazon.com/Principles-Life-Work-Ray-Dalio-ebook/dp/B071CTK28D/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "gave_up"
+      },
+      {
+        "id": 65,
+        "title": "How to Talk to Anyone: 92 Little Tricks for Big Success in Relationships",
+        "author": "Leil Lowndes",
+        "note": "Practical book about the art of conversation. Feels a bit manipulative at times, though.",
+        "purchaseUrl": "https://www.amazon.com/How-Talk-Anyone-Success-Relationships-ebook/dp/B000SEI4V0/",
+        "rank": 0,
+        "rating": "★★★★☆",
+        "reviewUrl": "",
+        "status": "finished"
+      },
+      {
+        "id": 66,
+        "title": "When: The Scientific Secrets of Perfect Timing",
+        "author": "Daniel Pink",
+        "note": "Lots of thought-provoking ideas about a fascinating topic.",
+        "purchaseUrl": "https://www.amazon.com/When-Scientific-Secrets-Perfect-Timing-ebook/dp/B072Q985YX/",
+        "rank": 0,
+        "rating": "★★★★☆",
+        "reviewUrl": "",
+        "status": "finished"
+      },
+      {
+        "id": 67,
+        "title": "What We Owe To Each Other",
+        "author": "T.M. Scanlon ",
+        "note": "Dense treatise on contractualism and determining the morality of our actions.",
+        "purchaseUrl": "https://www.amazon.com/What-We-Owe-Each-Other-ebook/dp/B08BJTMJBZ/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "reading"
+      },
+      {
+        "id": 68,
+        "title": "Good Without God: What a Billion Nonreligious People Do Believe",
+        "author": "Greg Epstein",
+        "note": "",
+        "purchaseUrl": "https://www.amazon.com/Good-Without-God-Billion-Nonreligious-ebook/dp/B002SR2Q9G/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "reading"
+      },
+      {
+        "id": 69,
+        "title": "The Harbinger: The Ancient Mystery that Holds the Secret of America's Future",
+        "author": "Johnathan Cahn",
+        "note": "A manufactured eisegetical retcon-job.",
+        "purchaseUrl": "https://www.amazon.com/Harbinger-Ancient-Mystery-Secret-Americas-ebook/dp/B005IYEQKI/",
+        "rank": 0,
+        "rating": "★☆☆☆☆",
+        "reviewUrl": "",
+        "status": "finished"
+      },
+      {
+        "id": 70,
+        "title": "Pale Rider: The Spanish Flu of 1918 and How It Changed the World",
+        "author": "Laura Spinney",
+        "note": "Fascinating cultural and societal parallels between the Spanish Flu and Coronavirus. Helpful read.",
+        "purchaseUrl": "https://www.amazon.com/Pale-Rider-Spanish-Changed-World-ebook/dp/B01N22ZOHC/",
+        "rank": 0,
+        "rating": "★★★★☆",
+        "reviewUrl": "",
+        "status": "finished"
+      },
+      {
+        "id": 69,
+        "title": "Range: Why Generalists Triumph in a Specialized World",
+        "author": "David J. Epstein",
+        "note": "",
+        "purchaseUrl": "https://www.amazon.com/Range-Generalists-Triumph-Specialized-World-ebook/dp/B07H1ZYWTM/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 70,
+        "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+        "author": "Susan Cain",
+        "note": "",
+        "purchaseUrl": "https://www.amazon.com/Quiet-Power-Introverts-World-Talking-ebook/dp/B004J4WNL2",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 71,
+        "title": "The Pattern On The Stone: The Simple Ideas That Make Computers Work",
+        "author": "Danny Hillis",
+        "note": "One of my favorite books. A simple yet profound explanation of how computers work.",
+        "purchaseUrl": " https://www.amazon.com/Pattern-Stone-Computers-Science-Masters-ebook/dp/B00NP8ME30/",
+        "rank": 0,
+        "rating": "★★★★★",
+        "reviewUrl": "",
+        "status": "finished"
+      },
+      {
+        "id": 72,
+        "title": "The Win Without Pitching Manifesto",
+        "author": "Blair Enns",
+        "note": "",
+        "purchaseUrl": "https://www.amazon.com/Win-Without-Pitching-Manifesto-ebook/dp/B07PPMGDLX/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 73,
+        "title": "Hitler's Cross: How the Cross Was Used to Promote the Nazi Agenda",
+        "author": "Erwin Lutzer",
+        "note": "Insightful and sobering look at how the Nazi party exploited the German church for political purposes.",
+        "purchaseUrl": "https://www.amazon.com/Hitlers-Cross-Used-Promote-Agenda-ebook/dp/B0157KEV0M/",
+        "rank": 0,
+        "rating": "★★★★☆",
+        "reviewUrl": "",
+        "status": "finished"
+      },
+      {
+        "id": 74,
+        "title": "The Better Angels of Our Nature: Why Violence Has Declined",
+        "author": "Steven Pinker",
+        "note": "",
+        "purchaseUrl": "https://www.amazon.com/Better-Angels-Our-Nature-Violence-ebook/dp/B0052REUW0/",
+        "rank": 0,
+        "rating": "★★★★☆",
+        "reviewUrl": "",
+        "status": "finished"
+      },
+      {
+        "id": 75,
+        "title": "How to Make Sense of Any Mess: Information Architecture for Everybody",
+        "author": "Abby Covert",
+        "note": "Not a book for everybody, but I found it helpful when dealing with a tangly IA problem.",
+        "purchaseUrl": "https://www.amazon.com/How-Make-Sense-Any-Mess-ebook/dp/B00PKMUHKG/",
+        "rank": 0,
+        "rating": "★★★★☆",
+        "reviewUrl": "",
+        "status": "finished"
+      },
+      {
+        "id": 76,
+        "title": "On the Nature of Things",
+        "author": "Lucretius",
+        "note": "Not immediately practical, but a fascinating glimpse at an elusive and long-silenced Epicurian poet and some of his more controversial ideas.",
+        "purchaseUrl": "https://www.amazon.com/Nature-Things-Lucretius-ebook-dp-B008KNO816/dp/B008KNO816/",
+        "rank": 0,
+        "rating": "★★★★☆",
+        "reviewUrl": "",
+        "status": "to_read"
+      }
     ]
   }
