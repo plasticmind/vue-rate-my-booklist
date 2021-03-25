@@ -8,7 +8,8 @@
         "purchaseUrl": "https://www.amazon.com/How-Not-Be-Wrong-Mathematical/dp/0143127535",
         "rank": 0,
         "rating": "★★★★★",
-        "reviewUrl": ""
+        "reviewUrl": "",
+        "status": "to_read"
       },
       {
         "id": 2,
@@ -18,7 +19,8 @@
         "purchaseUrl": "https://www.amazon.com/Burnout-Secret-Unlocking-Stress-Cycle/dp/1984818325/",
         "rank": 0,
         "rating": "★★★★☆",
-        "reviewUrl": ""
+        "reviewUrl": "",
+        "status": "to_read"
       },
       {
         "id": 3,
@@ -28,7 +30,8 @@
         "purchaseUrl": "https://www.amazon.com/dp/B0042JSQLU/",
         "rank": 0,
         "rating": "★★☆☆☆",
-        "reviewUrl": ""
+        "reviewUrl": "",
+        "status": "to_read"
       },
       {
         "id": 4,
@@ -38,7 +41,8 @@
         "purchaseUrl": "https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence-ebook/dp/B06WGNPM7V/",
         "rank": 0,
         "rating": "",
-        "reviewUrl": ""
+        "reviewUrl": "",
+        "status": "to_read"
       },
       {
         "id": 5,
@@ -48,8 +52,229 @@
         "purchaseUrl": "https://www.amazon.com/Connections-James-Burke-ebook/dp/B00768D5BK/",
         "rank": 0,
         "rating": "",
-        "reviewUrl": ""
-      }    
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 6,
+        "title": "Demon-Haunted World",
+        "author": "Carl Sagan",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Demon-Haunted-World-Science-Candle-Dark-ebook/dp/B004W0I00Q/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 7,
+        "title": "Capital and Ideology",
+        "author": "Thomas Piketty",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Capital-Ideology-Thomas-Piketty-ebook/dp/B082DKPPP1/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 8,
+        "title": "Doubt: A History",
+        "author": "Jennifer Hecht",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Doubt-Doubters-Innovation-Jefferson-Dickinson-ebook/dp/B003YCOORG/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 9,
+        "title": "Demon-Haunted World",
+        "author": "Carl Sagan",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Demon-Haunted-World-Science-Candle-Dark-ebook/dp/B004W0I00Q/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 10,
+        "title": "Jesus and John Wayne: How White Evangelicals Corrupted a Faith and Fractured a Nation",
+        "author": "Kristin Kobes Du Mez",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Jesus-John-Wayne-Evangelicals-Corrupted/dp/1631495739",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 11,
+        "title": "Streams of Living Water",
+        "author": "Richard Foster",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Streams-Living-Water-Celebrating-Traditions-ebook/dp/B003V1WW7E/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 13,
+        "title": "Stranger in a Strange Land",
+        "author": "Richard Heinlein",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stranger-Strange-Land-Robert-Heinlein-ebook/dp/B000TO0TDK/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 14,
+        "title": "Sapiens",
+        "author": "Yuval Noah Harari",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari-ebook/dp/B00ICN066A/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 15,
+        "title": "Good Economics for Hard Times",
+        "author": "Abhijit V. Banerjee and Esther Duflo",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/dp/B07PCQLKSS/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 16,
+        "title": "Good Strategy, Bad Strategy: The Difference and Why It Matters",
+        "author": "Richard Rumelt",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Good-Strategy-Bad-Difference-Matters-ebook/dp/B004J4WKEC/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 12,
+        "title": "The Stories of Your Life and Others",
+        "author": "Ted Chiang",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      }   
     ]
   }
   

@@ -2,7 +2,7 @@
     <li v-if="book" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
       <div class="book-info">
         <div class="title">
-          <a v-if="book.purchaseUrl" :href="book.purchaseUrl" :title="'Purchase '+book.title">
+          <a v-if="book.purchaseUrl" :href="book.purchaseUrl" :title="'Purchase '+book.title" target="_blank">
             {{ book.title }}
           </a>
           <span v-else>
@@ -100,5 +100,19 @@ export default {
 }
 .is-hot {
     border-right: solid 2px #E8C270;
+}
+.upvote {
+    cursor: pointer;
+    background: #fff;
+    color: #274553;
+    border-radius: 4px;
+    border: solid 1px #ccc;
+    transition: all 0.5s;
+}
+.upvote:hover {
+    background-color: #289D8F;
+    color: #fff;
+    border-color: transparent;
+    transition: all 0.2s;
 }
 </style>

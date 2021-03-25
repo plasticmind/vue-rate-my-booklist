@@ -42,11 +42,11 @@ a {
  transition: color 0.5s;
  color: #274553;
 }
+a:visited {
+  color: #E76F50;
+}
 a:hover {
   transition: color 0.2s;
   color: #289D8F;
-}
-a:visited {
-  color: #E76F50;
 }
 </style>
