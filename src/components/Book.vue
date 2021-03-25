@@ -60,9 +60,6 @@ export default {
   padding: 1rem;
   border-bottom: solid 1px #ddd;
 }
-.book:first-of-type {
-  border-top: solid 1px #ddd;
-}
 .book-info {
     flex-grow: 1;
 }

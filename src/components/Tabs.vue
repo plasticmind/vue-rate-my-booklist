@@ -16,8 +16,8 @@ export default {
 
 <style>
 .tabs {
-  /*display: flex;*/
-  display: none;
+  display: flex;
+  /* display: none; */
   list-style: none;
   padding: 0;
   margin: 0 1rem 1.5rem;
