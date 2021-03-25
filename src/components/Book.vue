@@ -25,7 +25,7 @@
         </div>
       </div>
       <div :class="{'rank-info': true, 'has-rank': hasRank}">
-        <button @click="increaseRank()" class="upvote">△</button>
+        <button @click.once="increaseRank()" class="upvote">△</button>
         <div class="rank">{{ book.rank }}</div>
       </div>
     </li>

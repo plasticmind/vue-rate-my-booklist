@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { EventBus } from '@/main'
 import Book from '@/components/Book'
 import booklist from '@/booklist.json'
 
@@ -18,6 +19,11 @@ export default {
       books: booklist.books
     }
   },
+  created: function () {
+    EventBus.$on('changeTab', (data) => {
+      console.log('remote component: ' + data);
+    })
+  },
   computed: {
     sortedBooks: function () {
       return this.books.slice(0).sort( (a,b) => {
@@ -27,7 +33,7 @@ export default {
     numBooks: function () {
       return this.books.length;
     }
-  },
+  }
 }
 </script>
 

@@ -2,7 +2,7 @@
   <div class="header">
     <div class="logo">Plasticmind</div>
     <Hello message="Help me decide which book I should read next..."/>
-    <Tabs/>
+    <Tabs active="read"/>
   </div>
 </template>
 
@@ -21,7 +21,7 @@ export default {
 
 <style>
 .header {
-  position: sticky;
+  /* position: sticky; */
   background: #fff;
   top: 0;
   z-index: 2;

@@ -1,15 +1,29 @@
 <template>
   <ul class="tabs">
-    <li class="read active">To Read</li>
-    <li class="finished">Finished</li>
+    <li @click="selectTab('read')" :class="['read', ( isActive === 'read' ) ? 'active' : '']">To Read</li>
+    <li @click="selectTab('finished')" :class="['finished', ( isActive === 'finished' ) ? 'active' : '']">Finished</li>
   </ul>
 </template>
 
 <script>
+import { EventBus } from '@/main'
 export default {
   name: 'Tabs',
   props: {
-    active: Boolean
+    active: String
+  },
+  data: function() {
+    return {
+      isActive: this.active
+    }
+  },
+  methods: {
+    selectTab (tab) {
+      if ( this.isActive === tab ) return false;
+      this.isActive = tab;
+      console.log('local component: ' + tab);
+      EventBus.$emit('changeTab', tab);
+    }
   }
 }
 </script>
@@ -25,6 +39,8 @@ export default {
   overflow: hidden;
   border: solid 1px #294653;
   color: #294653;
+  text-transform: uppercase;
+  font-size: 0.8rem;
 }
 .tabs li {
   width: 50%;
@@ -35,6 +51,7 @@ export default {
 }
 .tabs li:last-child {
   margin-left: -1px;
+  width: calc(50% + 1px);
 }
 .tabs li.active {
   background: #294653;

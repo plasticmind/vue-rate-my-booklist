@@ -749,28 +749,6 @@
         "status": "finished"
       },
       {
-        "id": 69,
-        "title": "Range: Why Generalists Triumph in a Specialized World",
-        "author": "David J. Epstein",
-        "note": "",
-        "purchaseUrl": "https://www.amazon.com/Range-Generalists-Triumph-Specialized-World-ebook/dp/B07H1ZYWTM/",
-        "rank": 0,
-        "rating": "",
-        "reviewUrl": "",
-        "status": "to_read"
-      },
-      {
-        "id": 70,
-        "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
-        "author": "Susan Cain",
-        "note": "",
-        "purchaseUrl": "https://www.amazon.com/Quiet-Power-Introverts-World-Talking-ebook/dp/B004J4WNL2",
-        "rank": 0,
-        "rating": "",
-        "reviewUrl": "",
-        "status": "to_read"
-      },
-      {
         "id": 71,
         "title": "The Pattern On The Stone: The Simple Ideas That Make Computers Work",
         "author": "Danny Hillis",
@@ -835,6 +813,28 @@
         "rating": "★★★★☆",
         "reviewUrl": "",
         "status": "finished"
+      },
+      {
+        "id": 77,
+        "title": "Range: Why Generalists Triumph in a Specialized World",
+        "author": "David J. Epstein",
+        "note": "",
+        "purchaseUrl": "https://www.amazon.com/Range-Generalists-Triumph-Specialized-World-ebook/dp/B07H1ZYWTM/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
+      },
+      {
+        "id": 78,
+        "title": "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+        "author": "Susan Cain",
+        "note": "",
+        "purchaseUrl": "https://www.amazon.com/Quiet-Power-Introverts-World-Talking-ebook/dp/B004J4WNL2",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": "",
+        "status": "to_read"
       }
     ]
   }

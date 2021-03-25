@@ -12,7 +12,7 @@ import BookList from './components/BookList'
 import Footer from './components/Footer'
 
 export default {
-  name: 'Rate My Booklist',
+  name: 'RankMyBooklist',
   components: {
     Header,
     BookList,
