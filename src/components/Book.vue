@@ -1,27 +1,29 @@
 <template>
-    <li v-if="book !== null" :id="'book-'+book.id" :class="{book: true, hot: isHot}">
+    <li v-if="book" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
       <div class="book-info">
         <div class="title">
-          <a v-if="book.purchaseUrl !== null" :href="book.purchaseUrl" :title="'Purchase '+book.title">
+          <a v-if="book.purchaseUrl" :href="book.purchaseUrl" :title="'Purchase '+book.title">
             {{ book.title }}
           </a>
           <span v-else>
             {{ book.title }}
           </span>
         </div>
-        <div v-if="book.author !== null" class="author">
+        <div v-if="book.author" class="author">
           {{ book.author }}
         </div>
-        <div v-if="book.rating !== null" class="rating">
-          {{ book.rating }}
-        </div>
-        <div v-if="book.reviewUrl !== null" class="review">
-          <a :href="book.reviewUrl" :title="'Read review of '+book.title">Review of {{ book.title }}</a>
+        <div class="book-meta">
+            <span v-if="book.rating" class="rating">
+                {{ book.rating }}
+            </span>
+            <span v-if="book.reviewUrl" class="review">
+                <a :href="book.reviewUrl" :title="'Read review of '+book.title">Review of {{ book.title }}</a>
+            </span>
         </div>
       </div>
       <div class="rank-info">
         <button @click="increaseRank()" class="upvote">△</button>
-        <div class="rank">{{ book.rank }}</div>
+        <div v-if="book.rank > 0" class="rank">{{ book.rank }}</div>
       </div>
     </li>
 </template>
@@ -32,8 +34,9 @@ export default {
         book: null
     },
     methods: {
-        increaseVotes: function () {
+        increaseRank: function () {
             this.book.rank++;
+            console.log('Upvoted!');
         }
     },
     computed: {
@@ -44,7 +47,58 @@ export default {
 }
 </script>
 
-<style scoped>
-
-
+<style>
+.book {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 1rem;
+  border-bottom: solid 1px #ddd;
+}
+.book:first-of-type {
+  border-top: solid 1px #ddd;
+}
+.book-info {
+    flex-grow: 1;
+}
+.title {
+  font-weight: 900;
+  padding-bottom: 0.25rem;
+}
+.author {
+  font-size: 0.8rem;
+  padding-bottom: 0.25rem;
+}
+.book-meta {
+    display: flex;
+  align-items: center;
+}
+.rating {
+  color: #E8C270;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+.review a {
+    margin-top: 2px;
+    display: block;
+    width: 12px;
+    height: 16px;
+    overflow: hidden;
+    text-indent: -999em;
+    opacity: 0.5;
+    background-image: url(../assets/icon-review.svg);
+    transition: opacity 0.5s;
+}
+.review a:hover {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+.rank-info {
+  text-align: center;
+  margin: 0.2rem 1rem 0 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.is-hot {
+    border-right: solid 2px #E8C270;
+}
 </style>

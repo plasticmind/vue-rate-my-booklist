@@ -6,7 +6,7 @@
         "author": "Jordan Ellenberg",
         "notes": "",
         "purchaseUrl": "https://www.amazon.com/How-Not-Be-Wrong-Mathematical/dp/0143127535",
-        "rank": 137,
+        "rank": 0,
         "rating": "★★★★★",
         "reviewUrl": ""
       },
@@ -16,7 +16,7 @@
         "author": "Emily Nagoski and Amelia Nagoski",
         "notes": "",
         "purchaseUrl": "https://www.amazon.com/Burnout-Secret-Unlocking-Stress-Cycle/dp/1984818325/",
-        "rank": 56,
+        "rank": 0,
         "rating": "★★★★☆",
         "reviewUrl": ""
       },
@@ -26,10 +26,30 @@
         "author": "David Bayles and Ted Orland",
         "notes": "",
         "purchaseUrl": "https://www.amazon.com/dp/B0042JSQLU/",
-        "rank": 11,
+        "rank": 0,
         "rating": "★★☆☆☆",
         "reviewUrl": ""
-      }  
+      },
+      {
+        "id": 4,
+        "title": "Life 3.0",
+        "author": "Max Tegmark",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Life-3-0-Being-Artificial-Intelligence-ebook/dp/B06WGNPM7V/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": ""
+      },
+      {
+        "id": 5,
+        "title": "Connections",
+        "author": "James Burke",
+        "notes": "",
+        "purchaseUrl": "https://www.amazon.com/Connections-James-Burke-ebook/dp/B00768D5BK/",
+        "rank": 0,
+        "rating": "",
+        "reviewUrl": ""
+      }    
     ]
   }
   

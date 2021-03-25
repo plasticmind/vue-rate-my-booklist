@@ -1,6 +1,6 @@
 <template>
   <ul class="book-list">
-    <Book v-for="a in sortedSubmissions" :post="a" :key="a.id"></Book>
+    <Book v-for="a in sortedBooks" :book="a" :key="a.id"></Book>
   </ul>
 </template>
 
@@ -9,7 +9,7 @@ import Book from '@/components/Book'
 import booklist from '@/booklist.json'
 
 export default {
-  name: 'BookList',
+
   components: {
     Book
   },
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 ul, li {
   list-style: none;
   margin: 0;
@@ -48,32 +48,5 @@ a:hover {
 }
 a:visited {
   color: #E76F50;
-}
-.book {
-  display: flex;
-  flex-direction: row-reverse;
-  padding: 1rem;
-  border-bottom: solid 1px #ddd;
-}
-.book:first-of-type {
-  border-top: solid 1px #ddd;
-}
-.title {
-  font-weight: 900;
-  padding-bottom: 0.25rem;
-}
-.author {
-  font-size: 0.8rem;
-  padding-bottom: 0.25rem;
-}
-.rating {
-  color: #E8C270;
-  font-size: 0.8rem;
-}
-.rank-info {
-  text-align: center;
-  margin: 0.25rem 1rem 0 0;
-  font-size: 0.8rem;
-  font-weight: bold;
 }
 </style>

@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Tabs from './components/Tabs.vue'
-import BookList from './components/BookList.vue'
-import Footer from './components/Footer.vue'
+import Header from './components/Header'
+import Tabs from './components/Tabs'
+import BookList from './components/BookList'
+import Footer from './components/Footer'
 
 export default {
   name: 'Rate My Booklist',
