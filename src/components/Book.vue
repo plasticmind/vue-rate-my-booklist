@@ -8,6 +8,7 @@
           <span v-else>
             {{ book.title }}
           </span>
+          <span v-if="book.status === 'reading'" class="current" :title="'I\'m currently reading this book.'" :aria-label="'I\'m currently reading this book.'"></span>
         </div>
         <div v-if="book.author" class="author">
           by {{ book.author }}
@@ -65,6 +66,36 @@ export default {
 .title {
   font-weight: 900;
   padding-bottom: 0.25rem;
+  position: relative;
+}
+.current {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  background: rgb(40, 157, 143);
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+	box-shadow: 0 0 0 0 rgb(40, 157, 143, 1);
+	animation: pulse 2s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(40, 157, 143, 0.7);
+	}
+	
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(40, 157, 143, 0);
+	}
+	
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(40, 157, 143, 0);
+	}
 }
 .author {
   font-size: 0.8rem;

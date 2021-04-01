@@ -38,7 +38,7 @@ background-attachment: fixed;
   font-family: 'Noto Sans JP', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 400px;
+  max-width: 440px;
   min-height: 100vh;
   margin: 0 auto;
   color: #2c3e50;
