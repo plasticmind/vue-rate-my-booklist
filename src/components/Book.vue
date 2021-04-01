@@ -117,8 +117,8 @@ export default {
   font-family: Times;
   line-height: 1;
   --star-size: 20px;
-  --star-color: #ddd;
-  --star-background: #fc0; 
+  --star-color: #eee;
+  --star-background: #E8C270; 
 }
 .stars::before {
   content: '★★★★★';
