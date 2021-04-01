@@ -1,5 +1,5 @@
 <template>
-    <li v-if="book && book.status == 'to_read' || book.status == 'reading'" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
+    <li v-if="book" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
       <div class="book-info">
         <div class="title">
           <a v-if="book.purchaseUrl" :href="book.purchaseUrl" :title="'Get a copy of '+book.title" target="_blank">
@@ -13,9 +13,9 @@
           by {{ book.author }}
         </div>
         <div class="book-meta">
-          <span v-if="book.rating" class="rating">
-            {{ book.rating }}
-          </span>
+          <div v-if="book.rating" class="rating">
+            <div class="stars" v-bind:style="{'--rating':book.rating}" :title="'I rated this book a ' + book.rating + ' out of 5'" :aria-label="'I rated this book a ' + book.rating + ' out of 5'"></div>
+          </div>
           <span v-if="book.reviewUrl" class="review">
             <a :href="book.reviewUrl" :title="'Read review of '+book.title">Review of {{ book.title }}</a>
           </span>
@@ -24,7 +24,7 @@
           {{ book.note }}
         </div>
       </div>
-      <div :class="{'rank-info': true, 'has-rank': hasRank}">
+      <div v-if="book.status && book.status !== 'finished' && book.status !== 'gave_up'" :class="{'rank-info': true, 'has-rank': hasRank}">
         <button @click.once="increaseRank()" class="upvote">△</button>
         <div class="rank">{{ book.rank }}</div>
       </div>
@@ -39,7 +39,6 @@ export default {
     methods: {
         increaseRank: function () {
             this.book.rank++;
-            console.log('Upvoted!');
         }
     },
     computed: {
@@ -78,8 +77,26 @@ export default {
 .rating {
   color: #E8C270;
   font-size: 0.8rem;
-  margin: 0.25rem 0.5rem 0 0;
+  margin: 0.5rem 0.5rem 0 0;
 }
+.stars {
+  --percent: calc(var(--rating) / 5 * 100%);  
+  display: inline-block;
+  font-size: var(--star-size);
+  font-family: Times;
+  line-height: 1;
+  --star-size: 20px;
+  --star-color: #ddd;
+  --star-background: #fc0; 
+}
+.stars::before {
+  content: '★★★★★';
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .review a {
     margin-top: 2px;
     display: block;

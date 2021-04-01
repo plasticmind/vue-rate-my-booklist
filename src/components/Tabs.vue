@@ -21,7 +21,6 @@ export default {
     selectTab (tab) {
       if ( this.isActive === tab ) return false;
       this.isActive = tab;
-      console.log('local component: ' + tab);
       EventBus.$emit('changeTab', tab);
     }
   }

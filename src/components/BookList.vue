@@ -1,6 +1,6 @@
 <template>
   <ul class="book-list">
-    <Book v-for="a in sortedBooks" :book="a" :key="a.id"></Book>
+    <Book v-for="a in filteredBooks" :book="a" :key="a.id"></Book>
   </ul>
 </template>
 
@@ -16,23 +16,42 @@ export default {
   },
   data: function () {
     return {
+      userFilterKey: 'to_read',
       books: booklist.books
     }
   },
   created: function () {
     EventBus.$on('changeTab', (data) => {
-      console.log('remote component: ' + data);
+      this.userFilterKey = data;
     })
   },
   computed: {
-    sortedBooks: function () {
+    /*
+    bookFilter: function() {
+      return this[this.bookFilterKey];
+    },
+    */
+    sortBooksByRank: function () {
       return this.books.slice(0).sort( (a,b) => {
         return b.rank - a.rank;
       });
     },
+    sortBooksByRating: function () {
+      return this.books.slice(0).sort( (a,b) => {
+        return b.rating - a.rating;
+      });
+    },
+    filteredBooks: function () {
+      if  ( this.userFilterKey === "finished" ) {
+        return this.sortBooksByRating.filter((book) => ( book.status === 'gave_up' || book.status === 'finished' ) );
+      } else {
+        return this.sortBooksByRank.filter((book) => ( book.status === 'to_read' || book.status === 'reading' ) );
+      }
+    },
     numBooks: function () {
       return this.books.length;
-    }
+    },
+    
   }
 }
 </script>
