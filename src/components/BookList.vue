@@ -9,6 +9,7 @@ import { EventBus } from '@/main'
 import Book from '@/components/Book'
 import booklist from '@/booklist.json'
 
+
 export default {
 
   components: {
