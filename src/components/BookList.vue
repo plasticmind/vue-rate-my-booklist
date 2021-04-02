@@ -7,8 +7,8 @@
 <script>
 import { EventBus } from '@/main'
 import Book from '@/components/Book'
-import booklist from '@/booklist.json'
-
+//import booklist from '@/booklist.json'
+import axios from 'axios'
 
 export default {
 
@@ -18,13 +18,33 @@ export default {
   data: function () {
     return {
       userFilterKey: 'to_read',
-      books: booklist.books
+      books: []
     }
   },
   created: function () {
     EventBus.$on('changeTab', (data) => {
       this.userFilterKey = data;
     })
+  },
+  mounted: function() {
+    this.loadBooks();
+  },
+  methods: {
+    loadBooks: function() {
+      this.books = []
+      axios.get(`/api/books`)
+      .then((response) => {
+        // load the API response into items for datatable
+        this.books = response.data.records.map((book)=>{
+          return {
+            id: book.id,
+            ...book.fields
+          }
+        })
+      }).catch((error) => {
+        console.log(error)
+      });
+    }
   },
   computed: {
     /*
