@@ -7,11 +7,10 @@
 <script>
 import { EventBus } from '@/main'
 import Book from '@/components/Book'
-//import booklist from '@/booklist.json'
 import axios from 'axios'
 
 export default {
-
+  name: 'BookList',
   components: {
     Book
   },
@@ -31,27 +30,16 @@ export default {
   },
   methods: {
     loadBooks: function() {
-      this.books = []
-      axios.get(`/api/books`)
+      axios.get('/api/books')
       .then((response) => {
-        // load the API response into items for datatable
-        this.books = response.data.records.map((book)=>{
-          return {
-            id: book.id,
-            ...book.fields
-          }
-        })
+        // console.log("Fetched successfully");
+        this.books = response.data;
       }).catch((error) => {
         console.log(error)
       });
     }
   },
   computed: {
-    /*
-    bookFilter: function() {
-      return this[this.bookFilterKey];
-    },
-    */
     sortBooksByRank: function () {
       return this.books.slice(0).sort( (a,b) => {
         return b.rank - a.rank;

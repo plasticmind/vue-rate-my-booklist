@@ -33,13 +33,30 @@
 </template>
 
 <script>
+import axios from 'axios'
+import Cookies from 'cookies-js'
+
 export default {
+    name: 'Book',
     props: {
         book: null
     },
     methods: {
         increaseRank: function () {
-            this.book.rank++;
+            if( !Cookies.get('voted-on-'+this.book.id) ) {
+              this.book.rank++;
+              axios.put('/api/books', {
+                id: this.book.id,
+                rank: this.book.rank
+              }).then(() => {
+                console.log("Upvoted, thanks!");
+                Cookies.set('voted-on-'+this.book.id,'true',{ expires: 365 });
+              }).catch((error) => {
+                console.log(error);
+                // Since upvote didn't write, lower score
+                this.book.rank--;
+              });
+            }
         }
     },
     computed: {
