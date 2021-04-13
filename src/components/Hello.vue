@@ -1,7 +1,7 @@
 <template>
     <div class="hello">
       <div class="avatar"><img src="@/assets/avatar.jpg" alt="Jesse Gardner"></div>
-      <div class="message"><span>{{ message }}</span></div>
+      <h2 class="message"><span>{{ message }}</span></h2>
     </div>    
 </template>
 
@@ -33,10 +33,11 @@ export default {
   align-items: center;
   justify-content: center;
   max-width: 300px;
-  margin: 1.5rem auto;
+  margin: 1rem auto;
 }
-
 .hello .message {
+  font-weight: normal;
+  font-size: 1rem;
   position: relative;
   padding: 0.5rem 0.75rem;
   color: #E37055;

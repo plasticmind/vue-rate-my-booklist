@@ -1,7 +1,7 @@
 <template>
     <li v-if="book" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
       <div class="book-info">
-        <div class="title">
+        <h3 class="title">
           <a v-if="book.purchaseUrl" :href="book.purchaseUrl" :title="'Get a copy of '+book.title" target="_blank">
             {{ book.title }}
           </a>
@@ -9,7 +9,7 @@
             {{ book.title }}
           </span>
           <span v-if="book.status === 'reading'" class="current" :title="'I\'m currently reading this book.'" :aria-label="'I\'m currently reading this book.'"></span>
-        </div>
+        </h3>
         <div v-if="book.author" class="author">
           by {{ book.author }}
         </div>
@@ -26,7 +26,11 @@
         </div>
       </div>
       <div v-if="book.status && book.status !== 'finished' && book.status !== 'gave_up'" :class="{'rank-info': true, 'has-rank': hasRank}">
-        <button @click.once="increaseRank()" class="upvote">△</button>
+        <button @click.once="increaseRank()" class="upvote">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.7046 7.8406C12.3155 7.44709 11.6845 7.44709 11.2954 7.8406L4.6575 14.5526C4.02973 15.1874 4.47434 16.2727 5.36214 16.2727H18.6378C19.5256 16.2727 19.9703 15.1874 19.3425 14.5526L12.7046 7.8406Z" fill="white"/>
+          </svg>
+        </button>
         <div class="rank">{{ book.rank }}</div>
       </div>
     </li>
@@ -81,6 +85,8 @@ export default {
     flex-grow: 1;
 }
 .title {
+  margin: 0;
+  font-size: 1rem;
   font-weight: 900;
   padding-bottom: 0.25rem;
   position: relative;
@@ -172,6 +178,39 @@ export default {
   opacity: 0.8;
 }
 .upvote {
+  cursor:pointer;
+  border:none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border-radius: 3px;
+  width: 28px;
+  height: 28px;
+  line-height: 0;
+border: solid 1px #299C8E;
+  transition: all 0.5s;
+}
+.upvote path {
+  fill: #299c8e;
+transition: all 0.5s;
+}
+.upvote:hover,
+.upvote:focus {
+  background: linear-gradient(#299C8E,#274654);
+background: #299C8E;
+  transition: all 0.1s;
+}
+.upvote:focus {
+  outline: solid 2px #
+}
+.upvote:hover path,
+.upvote:focus path {
+  fill: #fff;
+  transition: all 0.1s;
+}
+
+/*
+.upvote {
     cursor: pointer;
     background: #fff;
     color: #274553;
@@ -185,6 +224,7 @@ export default {
   border-color: transparent;
   transition: all 0.2s;
 }
+*/
 .is-hot {
   transition: border-width 0.5s;
   border-right: solid 2px #E8C270;

@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="logo"><img src="../assets/logo-words.svg" alt="Plasticmind"></div>
+    <h1 class="logo"><img src="../assets/logo-words.svg" alt="Rank My Booklist"></h1>
     <Hello message="Help me decide which book I should read next..."/>
     <Tabs active="read"/>
   </div>
@@ -37,5 +37,6 @@ export default {
   font-weight: 900;
   letter-spacing: 2px;
   padding: 0.5rem;
+  margin: 0;
 }
 </style>
