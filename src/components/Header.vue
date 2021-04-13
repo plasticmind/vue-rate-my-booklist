@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="logo">Plasticmind</div>
+    <div class="logo"><img src="../assets/logo-words.svg" alt="Plasticmind"></div>
     <Hello message="Help me decide which book I should read next..."/>
     <Tabs active="read"/>
   </div>

@@ -67,6 +67,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+.book-list {
+  min-height: 100vh;
+}
 ul, li {
   list-style: none;
   margin: 0;
