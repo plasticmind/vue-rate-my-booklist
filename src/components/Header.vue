@@ -36,7 +36,11 @@ export default {
   font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: 2px;
-  padding: 0.5rem;
+  padding: 0.5rem 2.5rem;
   margin: 0;
+}
+.logo img {
+  width: 100%;
+  height: auto;
 }
 </style>

@@ -200,9 +200,6 @@ transition: all 0.5s;
 background: #299C8E;
   transition: all 0.1s;
 }
-.upvote:focus {
-  outline: solid 2px #
-}
 .upvote:hover path,
 .upvote:focus path {
   fill: #fff;
