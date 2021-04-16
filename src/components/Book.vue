@@ -13,13 +13,13 @@
           by {{ book.author }}
         </div>
         <div class="book-meta">
-          <div v-if="book.status === 'reading'" class="current" :title="'I\'m currently reading this book.'" :aria-label="'I\'m currently reading this book.'"><span class="indicator"></span>Currently Reading</div>
           <div v-if="book.rating" class="rating">
             <div class="stars" v-bind:style="{'--rating':book.rating}" :aria-label="'Book rating: ' + book.rating + ' out of 5 stars'"></div>
           </div>
           <span v-if="book.reviewUrl" class="review">
             <a :href="book.reviewUrl" title="Read review of this book.">Review of {{ book.title }}</a>
           </span>
+          <div v-if="book.status === 'reading'" class="current" :aria-label="'I\'m currently reading this book.'"><span class="indicator"></span>Currently Reading</div>
         </div>
         <div v-if="book.note" class="book-note">
           {{ book.note }}
@@ -92,12 +92,13 @@ export default {
   position: relative;
 }
 .current {
+  display: inline-block;
   position: relative;
   background: rgb(40, 157, 143);
   color: #fff;
-  margin-top: 0.25rem;
-  font-size: 0.6rem;
-  padding: 0.15rem 0.75rem 0.2rem 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.75rem 0.3rem 1rem;
   border-radius: 12px;
 }
 .current span {
@@ -105,7 +106,7 @@ export default {
   display: inline-block;
   position: absolute;
   left: 0.5rem;
-  top: 0.5rem;
+  top: calc(50% - 1px);
   background: #fff;
   border-radius: 50%;
   height: 3px;
