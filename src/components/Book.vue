@@ -8,14 +8,14 @@
           <span v-else>
             {{ book.title }}
           </span>
-          <span v-if="book.status === 'reading'" class="current" :title="'I\'m currently reading this book.'" :aria-label="'I\'m currently reading this book.'"></span>
         </h3>
         <div v-if="book.author" class="author">
           by {{ book.author }}
         </div>
         <div class="book-meta">
+          <div v-if="book.status === 'reading'" class="current" :title="'I\'m currently reading this book.'" :aria-label="'I\'m currently reading this book.'"><span class="indicator"></span>Currently Reading</div>
           <div v-if="book.rating" class="rating">
-            <div class="stars" v-bind:style="{'--rating':book.rating}" :title="'I rated this book a ' + book.rating + ' out of 5'" :aria-label="'I rated this book a ' + book.rating + ' out of 5'"></div>
+            <div class="stars" v-bind:style="{'--rating':book.rating}" :aria-label="'Book rating: ' + book.rating + ' out of 5 stars'"></div>
           </div>
           <span v-if="book.reviewUrl" class="review">
             <a :href="book.reviewUrl" title="Read review of this book.">Review of {{ book.title }}</a>
@@ -31,7 +31,7 @@
             <path d="M12.7046 7.8406C12.3155 7.44709 11.6845 7.44709 11.2954 7.8406L4.6575 14.5526C4.02973 15.1874 4.47434 16.2727 5.36214 16.2727H18.6378C19.5256 16.2727 19.9703 15.1874 19.3425 14.5526L12.7046 7.8406Z" fill="white"/>
           </svg>
         </button>
-        <div class="rank">{{ book.rank }}</div>
+        <div class="rank" aria-label="Book rank: ">{{ book.rank }}</div>
       </div>
     </li>
 </template>
@@ -92,22 +92,32 @@ export default {
   position: relative;
 }
 .current {
+  position: relative;
+  background: rgb(40, 157, 143);
+  color: #fff;
+  margin-top: 0.25rem;
+  font-size: 0.6rem;
+  padding: 0.15rem 0.75rem 0.2rem 1rem;
+  border-radius: 12px;
+}
+.current span {
   content: "";
   display: inline-block;
   position: absolute;
-  right: 0;
+  left: 0.5rem;
   top: 0.5rem;
-  background: rgb(40, 157, 143);
+  background: #fff;
   border-radius: 50%;
-  height: 12px;
-  width: 12px;
-	box-shadow: 0 0 0 0 rgb(40, 157, 143, 1);
+  height: 3px;
+  width: 3px;
+	/* box-shadow: 0 0 0 0 rgb(40, 157, 143, 1); */
+  box-shadow: 0 0 0 0 rgb(255, 255, 255, 1);
 	animation: pulse 2s infinite;
 }
 @keyframes pulse {
 	0% {
 		transform: scale(0.95);
-		box-shadow: 0 0 0 0 rgba(40, 157, 143, 0.7);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
 	}
 	
 	70% {

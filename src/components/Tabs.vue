@@ -1,7 +1,7 @@
 <template>
   <nav role="navigation">
-      <button aria-label="List only books I'm reading or want to read." @click="selectTab('read')" :disabled="( isActive === 'read' ) ? true : false" :class="['read', ( isActive === 'read' ) ? 'active' : '']">To Read</button>
-      <button aria-label="List only books I've finished or given up on." @click="selectTab('finished')" :disabled="( isActive === 'finished' ) ? true : false" :class="['finished', ( isActive === 'finished' ) ? 'active' : '']">Finished</button>
+      <button aria-label="Filter by books I want to read." @click="selectTab('read')" :disabled="( isActive === 'read' ) ? true : false" :class="['read', ( isActive === 'read' ) ? 'active' : '']">To Read</button>
+      <button aria-label="Filter by books I've finished." @click="selectTab('finished')" :disabled="( isActive === 'finished' ) ? true : false" :class="['finished', ( isActive === 'finished' ) ? 'active' : '']">Finished</button>
   </nav>
 </template>
 
@@ -37,12 +37,9 @@ nav {
   border-radius: 8px;
   overflow: hidden;
   border: solid 1px #294653;
-  color: #294653;
-  text-transform: uppercase;
 }
 nav button {
   font-family: 'Noto Sans JP', Helvetica, Arial, sans-serif;
-  font-size: 0.8rem;
   border: 0;
   background: transparent;
   width: 50%;
@@ -50,6 +47,8 @@ nav button {
   display: inline-block;
   text-align: center;
   cursor: pointer;
+  color: #294653;
+  text-transform: uppercase;
 }
 nav button:last-child {
   margin-left: -1px;

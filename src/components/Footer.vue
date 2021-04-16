@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>A little side project by <a href="https://plasticmind.com">Jesse Gardner</a>.</p>
+    <p>A little side project by <a href="https://plasticmind.com" title="Visit my site.">Jesse Gardner</a>.</p>
   </footer>
 </template>
 
