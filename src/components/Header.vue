@@ -1,9 +1,9 @@
 <template>
-  <div class="header">
+  <header role="banner">
     <h1 class="logo"><img src="../assets/logo-words.svg" alt="Rank My Booklist"></h1>
     <Hello message="Help me decide which book I should read next..."/>
     <Tabs active="read"/>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style>
-.header {
+header {
   /* position: sticky; */
   background: #fff;
   top: 0;

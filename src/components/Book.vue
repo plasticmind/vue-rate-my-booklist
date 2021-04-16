@@ -2,7 +2,7 @@
     <li v-if="book" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
       <div class="book-info">
         <h3 class="title">
-          <a v-if="book.purchaseUrl" :href="book.purchaseUrl" :title="'Get a copy of '+book.title" target="_blank">
+          <a v-if="book.purchaseUrl" :href="book.purchaseUrl" title="Get a copy of this book." target="_blank">
             {{ book.title }}
           </a>
           <span v-else>
@@ -18,7 +18,7 @@
             <div class="stars" v-bind:style="{'--rating':book.rating}" :title="'I rated this book a ' + book.rating + ' out of 5'" :aria-label="'I rated this book a ' + book.rating + ' out of 5'"></div>
           </div>
           <span v-if="book.reviewUrl" class="review">
-            <a :href="book.reviewUrl" :title="'Read review of '+book.title">Review of {{ book.title }}</a>
+            <a :href="book.reviewUrl" title="Read review of this book.">Review of {{ book.title }}</a>
           </span>
         </div>
         <div v-if="book.note" class="book-note">
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div v-if="book.status && book.status !== 'finished' && book.status !== 'gave_up'" :class="{'rank-info': true, 'has-rank': hasRank}">
-        <button @click.once="increaseRank()" class="upvote">
+        <button aria-label="Upvote this book." @click.once="increaseRank()" class="upvote">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.7046 7.8406C12.3155 7.44709 11.6845 7.44709 11.2954 7.8406L4.6575 14.5526C4.02973 15.1874 4.47434 16.2727 5.36214 16.2727H18.6378C19.5256 16.2727 19.9703 15.1874 19.3425 14.5526L12.7046 7.8406Z" fill="white"/>
           </svg>

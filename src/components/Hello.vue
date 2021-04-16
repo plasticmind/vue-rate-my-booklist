@@ -40,8 +40,8 @@ export default {
   font-size: 1rem;
   position: relative;
   padding: 0.5rem 0.75rem;
-  color: #E37055;
-  border: solid 1px #E37055;
+  color: #D34322;
+  border: solid 1px #D34322;
 }
 .hello .message span {
   display: inline-block;

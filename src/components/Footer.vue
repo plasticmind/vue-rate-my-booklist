@@ -1,7 +1,7 @@
 <template>
-  <div class="footer">
+  <footer>
     <p>A little side project by <a href="https://plasticmind.com">Jesse Gardner</a>.</p>
-  </div>
+  </footer>
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <style>
-.footer {
+footer {
   font-size: 0.8rem;
   text-align: center;
   background: #294653;

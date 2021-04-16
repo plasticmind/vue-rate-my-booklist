@@ -1,7 +1,9 @@
 <template>
-  <ul class="book-list">
-    <Book v-for="a in filteredBooks" :book="a" :key="a.id"></Book>
-  </ul>
+  <main role="main">
+    <ol class="book-list">
+      <Book v-for="a in filteredBooks" :book="a" :key="a.id"></Book>
+    </ol>
+  </main>
 </template>
 
 <script>
@@ -70,7 +72,7 @@ export default {
 .book-list {
   min-height: 100vh;
 }
-ul, li {
+ol, ul, li {
   list-style: none;
   margin: 0;
   padding: 0;
