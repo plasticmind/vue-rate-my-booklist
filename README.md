@@ -1,4 +1,6 @@
-# vue-rate-my-booklist
+~[Rank My Booklist Logo](/public/logo-og.png)
+
+# Rank My Booklist
 
 ## Project setup
 ```
