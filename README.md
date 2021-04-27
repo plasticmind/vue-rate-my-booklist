@@ -1,4 +1,4 @@
-~[Rank My Booklist Logo](/public/logo-og.png)
+![Rank My Booklist Logo](/public/logo-og.png)
 
 # Rank My Booklist
 
