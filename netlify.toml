@@ -1,3 +1,8 @@
+[dev]
+  port = 8020 # The port that the netlify dev will be accessible on
+  publish = "dist" # The path to your static content folder
+  autoLaunch = true # a Boolean value that determines if Netlify Dev launches the local server address in your browser
+  
 [build]
     functions = "functions"
 [[redirects]]

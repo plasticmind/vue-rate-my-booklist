@@ -25,7 +25,7 @@
           {{ book.note }}
         </div>
       </div>
-      <div v-if="book.status && book.status !== 'finished' && book.status !== 'gave_up'" :class="{'rank-info': true, 'has-rank': hasRank}">
+      <div v-if="book.status && book.status !== 'gave_up' && book.status !== 'finished'" :class="{'rank-info': true, 'has-rank': hasRank}">
         <button aria-label="Upvote this book." @click.once="increaseRank()" class="upvote">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.7046 7.8406C12.3155 7.44709 11.6845 7.44709 11.2954 7.8406L4.6575 14.5526C4.02973 15.1874 4.47434 16.2727 5.36214 16.2727H18.6378C19.5256 16.2727 19.9703 15.1874 19.3425 14.5526L12.7046 7.8406Z" fill="white"/>
@@ -79,14 +79,14 @@ export default {
   display: flex;
   flex-direction: row-reverse;
   padding: 1rem;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px #eee;
 }
 .book-info {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 .title {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 900;
   padding-bottom: 0.25rem;
   position: relative;
@@ -94,11 +94,11 @@ export default {
 .current {
   display: inline-block;
   position: relative;
-  background: rgb(40, 157, 143);
+  background: var(--accent-dark);
   color: #fff;
   margin-top: 0.5rem;
   font-size: 0.7rem;
-  padding: 0.15rem 0.75rem 0.3rem 1rem;
+  padding: 0.25rem 0.75rem 0.3rem 1rem;
   border-radius: 12px;
 }
 .current span {
@@ -132,11 +132,11 @@ export default {
 	}
 }
 .author {
-  font-size: 0.8rem;
+  color: var(--neutral-10);
   padding-bottom: 0.25rem;
 }
 .book-meta {
-    display: flex;
+  display: flex;
   align-items: center;
 }
 .rating {
@@ -163,13 +163,13 @@ export default {
 }
 
 .review a {
-    margin-top: 2px;
+    margin-top: 0.5rem;
     display: block;
     width: 12px;
     height: 16px;
     overflow: hidden;
     text-indent: -999em;
-    opacity: 0.5;
+    opacity: 0.8;
     background-image: url(../assets/icon-review.svg);
     transition: opacity 0.5s;
 }
@@ -184,9 +184,9 @@ export default {
   font-weight: bold;
 }
 .book-note {
+  color: var(--neutral-10);
   margin-top: 0.5rem;
-  font-size: 0.9rem;
-  opacity: 0.8;
+  line-height: 1.3;
 }
 .upvote {
   cursor:pointer;
@@ -198,17 +198,17 @@ export default {
   width: 28px;
   height: 28px;
   line-height: 0;
-border: solid 1px #299C8E;
+border: solid 1px var(--accent-dark);
   transition: all 0.5s;
 }
 .upvote path {
-  fill: #299c8e;
+  fill: var(--accent-dark);
 transition: all 0.5s;
 }
 .upvote:hover,
 .upvote:focus {
-  background: linear-gradient(#299C8E,#274654);
-background: #299C8E;
+  background: linear-gradient(var(--accent-light),var(--accent-dark));
+background: var(--accent-dark);
   transition: all 0.1s;
 }
 .upvote:hover path,
@@ -239,6 +239,9 @@ background: #299C8E;
 }
 .rank {
   opacity: 0;
+  color: var(--accent-light);
+  margin-top: 0.25rem;
+  font-size: 1rem;
   transition: opacity 1s;
 }
 .has-rank .rank {

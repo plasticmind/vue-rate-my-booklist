@@ -14,11 +14,12 @@ export default {
 footer {
   font-size: 0.8rem;
   text-align: center;
-  background: #294653;
+  background: var(--brand);
   color: #fff;
   padding: 0.5rem;
 }
-.footer a {
+footer a,
+footer a:visited {
   color: #fff;
 }
 

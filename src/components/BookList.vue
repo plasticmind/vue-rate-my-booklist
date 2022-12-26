@@ -55,8 +55,10 @@ export default {
     filteredBooks: function () {
       if  ( this.userFilterKey === "finished" ) {
         return this.sortBooksByRating.filter((book) => ( book.status === 'gave_up' || book.status === 'finished' ) );
+      } else if ( this.userFilterKey === "reading" ) {
+        return this.sortBooksByRank.filter((book) => ( book.status === 'reading' ) );
       } else {
-        return this.sortBooksByRank.filter((book) => ( book.status === 'to_read' || book.status === 'reading' ) );
+        return this.sortBooksByRank.filter((book) => ( book.status === 'to_read' ) );
       }
     },
     numBooks: function () {
@@ -71,21 +73,5 @@ export default {
 <style>
 .book-list {
   min-height: 100vh;
-}
-ol, ul, li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-a {
- transition: color 0.5s;
- color: #274553;
-}
-a:visited {
-  color: #E76F50;
-}
-a:hover {
-  transition: color 0.2s;
-  color: #289D8F;
 }
 </style>

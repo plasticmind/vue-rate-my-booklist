@@ -22,21 +22,21 @@ export default {
 <style>
 header {
   /* position: sticky; */
-  background: #fff;
+  background: white;
   top: 0;
   z-index: 2;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px #eee;
 }
 .logo {
   text-transform: uppercase;
-  background: linear-gradient(#299C8E,#274654);
+  background: linear-gradient(var(--accent-light),var(--brand));
   color: #fff;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.5rem;
   font-weight: 900;
   letter-spacing: 2px;
-  padding: 0.5rem 2.5rem;
+  padding: 1rem 2.5rem;
   margin: 0;
 }
 .logo img {

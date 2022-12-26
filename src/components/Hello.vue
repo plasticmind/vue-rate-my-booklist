@@ -32,7 +32,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 300px;
+  max-width: 410px;
   margin: 1rem auto;
 }
 .hello .message {
@@ -40,8 +40,8 @@ export default {
   font-size: 1rem;
   position: relative;
   padding: 0.5rem 0.75rem;
-  color: #D34322;
-  border: solid 1px #D34322;
+  color: var(--accent-dark);
+  border: solid 1px var(--accent-dark);
 }
 .hello .message span {
   display: inline-block;
@@ -52,7 +52,7 @@ export default {
   height: 0px;
   position: absolute;
   border-left: 10px solid transparent;
-  border-right: 10px solid #E37055;
+  border-right: 10px solid var(--accent-dark);
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   top: calc( 50% - 10px );
