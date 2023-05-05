@@ -42,23 +42,17 @@ export default {
     }
   },
   computed: {
-    sortBooksByRank: function () {
-      return this.books.slice(0).sort( (a,b) => {
-        return b.rank - a.rank;
-      });
-    },
-    sortBooksByRating: function () {
-      return this.books.slice(0).sort( (a,b) => {
-        return b.rating - a.rating;
-      });
-    },
     filteredBooks: function () {
-      if  ( this.userFilterKey === "finished" ) {
-        return this.sortBooksByRating.filter((book) => ( book.status === 'gave_up' || book.status === 'finished' ) );
-      } else if ( this.userFilterKey === "reading" ) {
-        return this.sortBooksByRank.filter((book) => ( book.status === 'reading' ) );
+      let filtered;
+      if (this.userFilterKey === "finished" || this.userFilterKey === "gave_up") {
+        filtered = this.books.filter((book) => (book.status === 'gave_up' || book.status === 'finished'));
+        return filtered.sort((a, b) => b.rating - a.rating); // Sort by rating
+      } else if (this.userFilterKey === "reading") {
+        filtered = this.books.filter((book) => (book.status === 'reading'));
+        return filtered.sort((a, b) => b.rank - a.rank); // Sort by rank
       } else {
-        return this.sortBooksByRank.filter((book) => ( book.status === 'to_read' ) );
+        filtered = this.books.filter((book) => (book.status === 'to_read'));
+        return filtered.sort((a, b) => b.rank - a.rank); // Sort by rank
       }
     },
     numBooks: function () {

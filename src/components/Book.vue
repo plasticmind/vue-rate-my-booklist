@@ -1,20 +1,29 @@
 <template>
-  <li v-if="book" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
-    <div class="book-info">
-      <h3 class="title">
-        <a v-if="book.purchaseUrl" :href="book.purchaseUrl" title="Get a copy of this book." target="_blank">
-          {{ book.title }}
-        </a>
-        <span v-else>
-          {{ book.title }}
-        </span>
-      </h3>
-      <div v-if="book.author" class="author">
-        by {{ book.author }}
-      </div>
-      <div class="book-meta">
-        <div v-if="book.rating" class="rating">
-          <div class="stars" v-bind:style="{'--rating':book.rating}" :aria-label="'Book rating: ' + book.rating + ' out of 5 stars'"></div>
+    <li v-if="book" :id="'book-'+book.id" :class="{book: true, 'is-hot': isHot}">
+      <div class="book-info">
+        <h3 class="title">
+          <a v-if="book.purchaseUrl" :href="book.purchaseUrl" title="Get a copy of this book." target="_blank">
+            {{ book.title }}
+          </a>
+          <span v-else>
+            {{ book.title }}
+          </span>
+        </h3>
+        <div v-if="book.author" class="author">
+          by {{ book.author }}
+        </div>
+        <div class="book-meta">
+          <div v-if="book.rating" class="rating">
+            <div class="stars" v-bind:style="{'--rating':book.rating}" :aria-label="'Book rating: ' + book.rating + ' out of 5 stars'"></div>
+          </div>
+          <span v-if="book.reviewUrl" class="review">
+            <a :href="book.reviewUrl" title="Read review of this book.">Review of {{ book.title }}</a>
+          </span>
+          <div v-if="book.status === 'reading'" class="current" :aria-label="'I\'m currently reading this book.'"><span class="indicator"></span>Currently Reading</div>
+        </div>
+
+        <div v-if="book.note" class="book-note">
+          {{ book.note }}
         </div>
         <span v-if="book.reviewUrl" class="review">
           <a :href="book.reviewUrl" title="Read review of this book.">Review of {{ book.title }}</a>
