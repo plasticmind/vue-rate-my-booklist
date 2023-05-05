@@ -21,6 +21,7 @@
           </span>
           <div v-if="book.status === 'reading'" class="current" :aria-label="'I\'m currently reading this book.'"><span class="indicator"></span>Currently Reading</div>
         </div>
+
         <div v-if="book.note" class="book-note">
           {{ book.note }}
         </div>
