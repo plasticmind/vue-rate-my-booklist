@@ -55,7 +55,7 @@ export default {
           }).then(() => {
             //console.log("Upvoted, thanks!");
             Cookies.set('voted-on-'+this.book.id,'true',{ expires: 365 });
-          }).catch((error) => {
+          }).catch(() => {
             //console.log(error);
             // Since upvote didn't write, lower score
             this.book.rank--;
